@@ -1,6 +1,6 @@
 {
-    "name": "hometask_flutter_v2",
-    "short_name": "hometask_flutter_v2",
+    "name": "flutter_responsive_application_laboratory",
+    "short_name": "flutter_responsive_application_laboratory",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
