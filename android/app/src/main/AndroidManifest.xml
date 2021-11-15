@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.flutter_responsive_application_laboratory">
+    package="com.example.shop_cart">
    <application
-        android:label="flutter_responsive_application_laboratory"
+        android:label="shop_cart"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

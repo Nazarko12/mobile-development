@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:flutter_responsive_application_laboratory/screens/main/main_screen.dart';
-
-import 'constants.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:shop_cart/UI/product_page.dart';
+import 'package:shop_cart/shop/bloc/shop_bloc.dart';
 
 void main() {
   runApp(MyApp());
@@ -12,22 +11,13 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Application',
-      theme: ThemeData(
-        primaryColor: kPrimaryColor,
-        scaffoldBackgroundColor: kBgColor,
-        elevatedButtonTheme: ElevatedButtonThemeData(
-          style: TextButton.styleFrom(backgroundColor: kPrimaryColor),
-        ),
-        textTheme: TextTheme(
-          bodyText1: TextStyle(color: kBodyTextColor),
-          bodyText2: TextStyle(color: kBodyTextColor),
-          headline5: TextStyle(color: kDarkBlackColor),
-        ),
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(),
+      home: BlocProvider(
+        create: (context) => ShopBloc(),
+        child: ProductPage(),
       ),
-      home: MainScreen(),
     );
   }
 }

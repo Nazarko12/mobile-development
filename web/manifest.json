@@ -1,6 +1,6 @@
 {
-    "name": "flutter_responsive_application_laboratory",
-    "short_name": "flutter_responsive_application_laboratory",
+    "name": "shop_cart",
+    "short_name": "shop_cart",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
